@@ -5,7 +5,20 @@ body {
     align-items: center;
     height: 90vh;
     background-color: #f4f4f4;
-    background-image: url(img/descargaproga\ -\ copia.jfif);
+    background-image: url(img/descargaproga\ -\ copia.jfi);
+    flex-direction: column;
+    align-items: center;
+    
+}
+#contenedor {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    position: absolute;
+    top: 20px; /* Ajusta según necesidad */
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -10px;
 }
 .container {
     background: white;
@@ -15,9 +28,10 @@ body {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.9);
     background-color: #fafcfd38;
+    margin-top: 200px;
 }
 input {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
