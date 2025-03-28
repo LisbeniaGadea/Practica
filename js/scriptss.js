@@ -34,19 +34,19 @@ function cambiar_color()
 {
     var elemento = document.getElementById("contenedor");
 
-    if (document.body.style.backgroundColor === "black")
+    if (document.body.style.backgroundColor === "pink")
         {
-            document.body.style.backgroundColor = "white";
+            document.body.style.backgroundColor = "purple";
             elemento.style.width = "200px";
             elemento.style.heigth = "200px";
             elemento.style.backgroundColor="red";
         }
     else
     {
-        document.body.style.backgroundColor = "black";
+        document.body.style.backgroundColor = "pink";
         elemento.style.width = "200px";
         elemento.style.heigth = "200px";
-        elemento.style.backgroundColor="blue";
+        elemento.style.backgroundColor="yellow";
     }
     
 }
