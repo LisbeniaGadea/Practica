@@ -36,17 +36,17 @@ function cambiar_color()
 
     if (document.body.style.backgroundColor === "pink")
         {
-            document.body.style.backgroundColor = "purple";
+            document.body.style.backgroundColor = "white";
             elemento.style.width = "200px";
             elemento.style.heigth = "200px";
-            elemento.style.backgroundColor="red";
+            elemento.style.backgroundColor="olive";
         }
     else
     {
         document.body.style.backgroundColor = "pink";
         elemento.style.width = "200px";
         elemento.style.heigth = "200px";
-        elemento.style.backgroundColor="yellow";
+        elemento.style.backgroundColor="sienna";
     }
     
 }
