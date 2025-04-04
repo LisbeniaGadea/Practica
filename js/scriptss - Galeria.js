@@ -17,7 +17,7 @@ function showImage(index) {
 setInterval(() => {
     currentIndex++;
     showImage(currentIndex);
-}, 4000);
+}, 1500);
 
 document.querySelector('.prev').addEventListener('click', () => {
     currentIndex--;
