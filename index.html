@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <title>Pagina Principal</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="container">
-        <h2>Formulario</h2>
-        <input type="text" id="input1" placeholder="Ingrese Datos">
-        <input type="text" id="input2" placeholder="Ingrese Datos">
-        <h3 id="resultado">Esperando Mensaje</h3>
-        <button id="mi_boton">Aceptar</button>
-        <button id="mi_boton2">Cancelar</button>
+    <div class="menu-container">
+        <button class="menu-button" onclick="redirigir('Formulario.html')">Formulario</button>
+        <button class="menu-button" onclick="redirigir('Animaciones.html')">Animaciones</button>
+        
+        <div class="dropdown-container">
+            <button class="dropdown-button">Menú</button>
+            <div class="dropdown-menu">
+                <a href="Contador de Clics.html">Contador</a> 
+                <a href="Validacion de formulario.html">Validacion</a>
+                <a href="Calculadora simple.html">Calculadora</a>
+                <a href="Galeria de imagenes.html">Galeria</a>
+            </div>
+        </div>
     </div>
-    <div id="contenedor" style="width: 150px; height: 150px; background-color: red;"></div>
+    <script src="js/scriptss.js"></script>
 </body>
- <script src="js/scriptss.js"></script>
-</html> 
+</html>
+ 
