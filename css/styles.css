@@ -5,6 +5,9 @@ body {
     color: #4a235a;
     margin: 50px;
     background-image: url(pro.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .menu-container {
@@ -13,6 +16,7 @@ body {
     align-items: center;
     height: 65vh;
     gap: 20px;
+    flex-wrap: wrap; 
 }
 
 .menu-button, .dropdown-button {
@@ -28,12 +32,28 @@ body {
     position: relative;
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(142, 68, 173, 0.4);
+    min-width: 180px;
 }
 
 .menu-button:hover, .dropdown-button:hover {
     transform: scale(1.1);
     box-shadow: 0 12px 24px rgba(214, 51, 132, 0.5);
     background: linear-gradient(135deg, #d63384, #ffcc29);
+}
+
+.menu-button::before, .dropdown-button::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background: rgba(255, 255, 255, 0.3);
+    transition: left 0.5s ease-in-out;
+}
+
+.menu-button:hover::before, .dropdown-button:hover::before {
+    left: 100%;
 }
 
 .dropdown-container {
@@ -80,18 +100,53 @@ body {
     display: block;
 }
 
-.menu-button::before, .dropdown-button::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: -100%;
-    background: rgba(255, 255, 255, 0.3);
-    transition: left 0.5s ease-in-out;
-}
+@media (max-width: 768px) {
+    .menu-container {
+        flex-direction: column;
+        height: auto;
+        gap: 15px;
+    }
 
-.menu-button:hover::before, .dropdown-button:hover::before {
-    left: 100%;
-}
+    .menu-button, .dropdown-button {
+        width: 80%;
+        font-size: 16px;
+        padding: 12px 30px;
+    }
 
+    .dropdown-button {
+        font-size: 28px;
+        padding: 10px 20px;
+        background: none;
+        color: #4a235a;
+        box-shadow: none;
+        border-radius: 10px;
+    }
+
+    .dropdown-button::before,
+    .dropdown-button:hover::before {
+        display: none;
+    }
+
+    .dropdown-button::after {
+        content: "☰";
+    }
+
+    .dropdown-menu {
+        position: static;
+        display: none;
+        width: 80%;
+        margin: 0 auto;
+        box-shadow: none;
+        background: #fff;
+    }
+
+    .dropdown-container.active .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu a {
+        padding: 12px;
+        text-align: center;
+        border-bottom: 1px solid #eee;
+    }
+}

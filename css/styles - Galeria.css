@@ -54,3 +54,9 @@ button {
 button:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
+@media (max-width: 600px) {
+.outer-container {
+    flex-direction: column; 
+    gap: 10px;
+    }
+}
