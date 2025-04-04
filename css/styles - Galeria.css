@@ -17,12 +17,12 @@ body {
 .outer-container {
     display: flex;
     align-items: center;
-    gap: 15px; 
+    gap: 15px;
 }
 
 .gallery-container {
     position: relative;
-    width: 350px;
+    width: 350px; 
     max-width: 900%;
     overflow: hidden;
     border-radius: 10px;
@@ -34,7 +34,7 @@ body {
 }
 
 .gallery-image {
-    width: 100%; 
+    width: 100%;
     height: auto; 
     flex-shrink: 0;
     border-radius: 10px;
@@ -53,10 +53,4 @@ button {
 
 button:hover {
     background-color: rgba(0, 0, 0, 0.8);
-}
-@media (max-width: 600px) {
-.outer-container {
-    flex-direction: column; 
-    gap: 10px;
-    }
 }

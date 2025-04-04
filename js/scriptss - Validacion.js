@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (valid) {
             alert("Información enviada");
-            form.reset(); 
+            form.reset();
         }
     });
 });

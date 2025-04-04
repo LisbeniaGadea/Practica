@@ -1,6 +1,6 @@
 body {
     background: linear-gradient(135deg, #fef6e4, #fcd34d);
-    font-family:cursive;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
